@@ -88,7 +88,7 @@ It achieves a 5-fold cross validation accuracy(average) of 85.09%, a testing acc
 
 ## Dependent Environment and Tips
 
-## Dependent Environment
+### Dependent Environment
 
 The whole project is developed in Python3.6. Please note that using other Python version may lead to unknown errors. Required libraries are shown below, where the recommended package versions are also demonstrated:
 
@@ -102,4 +102,9 @@ The whole project is developed in Python3.6. Please note that using other Python
   * scikit-learn 0.23.2
   * keras 2.4.3
   * tensorflow-gpu 2.3.1 / Alternative: tensorflow (latest version)
+  
+Note that the CNN models are built by tensorflow-gpu version, while it is uncertain for its compatibility in the base tensorflow module. Conflict may happen if you have both of the two package, since base tensorflow is the default to be imported. Some dependent libraries may be required to use face_recognition module, if meet errors, please check [here](https://github.com/ageitgey/face_recognition).
 
+### Tips
+
+The file reading directory (for dataset loading) is tested on Windows10 (x86) using Spyder as IDE, while uncertainty can be expected for running on OS or Linux or other IDEs. If errors encountered, please modify the **pathA**, **pathB**, **pathA_addition**, **pathB_addition** variables in **main.py** at line 8-11. The data reading works on relative directory, try to excute **main.py** in the directory where it locates.
