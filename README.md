@@ -28,3 +28,78 @@ To recognize the given five different types of face shape, K-Nearest Neighbour (
 
 It achieves a 5-fold cross validation accuracy(average) of 99.99%, a testing accuracy of 99.97%. The confusion matrix below shows some details.
 <div align=center><img src=https://github.com/JianqiaoMao/AMLS_assignment20_21/blob/main/graphs/Confusion_MatrixB1.png width=400 /></div>
+
+### 4) Task B2: Eye's Color Classification
+
+Convolutional Neural Network (CNN) is proved to have human-like performance in various computer vision tasks. The convolutional layers, firstly, reduces trainable parameters by weights sharing, secondly, extracts local features of image by convolution operation. Then, fully connected layers perform as classifier based on the extracted feature maps. To classify eye’s color of cartoon characters, the segmented eye’s area (RoI) with a shape of 50-pixel height, 200-pixel width and 4 color channels is used as CNN input.
+
+It achieves a 5-fold cross validation accuracy(average) of 85.09%, a testing accuracy of 84.60%. The confusion matrix below shows some details.
+<div align=center><img src=https://github.com/JianqiaoMao/AMLS_assignment20_21/blob/main/graphs/Confusion_MatrixB2.png width=400 /></div>
+
+## File Description
+
+### Base Directory
+
+1) The file folder **A1**, **A2**, **B1**, **B2** contain code fles for each task. Details is described later.
+
+2) The file folder **Datasets** is set to empty for copy-paste usage by reviwers.
+
+3) The file folder **graphs** contains some png files for demonstration in this **readme** file
+
+4) The .py file **AMLS.py** is the packaged module that should be imported to run **main.py**
+
+5) The .py file **main.py** can be excuted to run the project.
+
+6) The .h5 file **CNN.h5** is the pre-trained CNN model applied into Task B2.
+
+### File Folder A1
+
+1) **A1_model_selection.py** is run to select traditional machine learning models and tune hyperparameters by grid search and cross validation, including KNN, SVM, Bagging, Boosting.
+
+2) **A1_CNN.py** is run to tune hyperparameters of the CNN and evaluate it by cross validation.
+
+3) **A1_SelectedModel_SVM.py** is run to check the selected SVM performance on test set.
+
+### File Folder A2
+
+1) **A2_model_selection.py** is run to select traditional machine learning models and tune hyperparameters by grid search and cross validation, including KNN, SVM, Bagging, Boosting.
+
+2) **A2_simple_CNN.py** is run to tune hyperparameters of a relatively simpler CNN and evaluate it by cross validation.
+
+2) **A2_complex_CNN.py** is run to tune hyperparameters of a relatively more complex CNN and evaluate it by cross validation.
+
+4) **A2_SelectedModel_bagging.py** is run to check selected bagging method performance on test set.
+
+### File Folder B1
+
+1) **B1_model_selection.py** is run to select traditional machine learning models and tune hyperparameters by grid search and cross validation, including KNN, SVM, Bagging, Boosting.
+
+2) **B1_CNN.py** is run to tune hyperparameters of the CNN and evaluate it by cross validation.
+
+3) **B1_SelectedModel_KNN.py** is run to check the selected KNN performance on test set.
+
+### File Folder B2
+
+1) **B1_CNN_simple.py** is run to tune hyperparameters of a relatively simpler CNN and evaluate it by cross validation.
+
+2) **B2_CNN_complicated.py** is run to tune hyperparameters of a relatively more complex CNN and evaluate it by cross validation.
+
+3) **B2_SelectedModel_CNN.py** is run to check the selected CNN performance on test set.
+
+## Dependent Environment and Tips
+
+## Dependent Environment
+
+The whole project is developed in Python3.6. Please note that using other Python version may lead to unknown errors. Required libraries are shown below, where the recommended package versions are also demonstrated:
+
+  * numpy 1.19.1
+  * pandas 1.1.3
+  * face_recognition 1.3.0
+  * dlib 19.21.0
+  * opencv-python 4.4.0.46
+  * seaborn 0.11.0
+  * matplotlib 3.3.2
+  * scikit-learn 0.23.2
+  * keras 2.4.3
+  * tensorflow-gpu 2.3.1 / Alternative: tensorflow (latest version)
+
