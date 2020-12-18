@@ -99,7 +99,7 @@ It achieves a 5-fold cross validation accuracy(average) of 85.09%, a testing acc
 
 #### Dependent Environment
 
-The whole project is developed in Python3.6. Please note that using other Python version may lead to unknown errors. Required libraries are shown below, where the recommended package versions are also demonstrated:
+The whole project is developed in Python3.6. Please note that using other Python versions may lead to unknown errors. Required libraries are shown below, where the recommended package versions are also demonstrated:
 
   * numpy 1.19.1
   * pandas 1.1.3
@@ -112,7 +112,7 @@ The whole project is developed in Python3.6. Please note that using other Python
   * keras 2.4.3
   * tensorflow-gpu 2.3.1 / Alternative: tensorflow (latest version)
   
-Note that the CNN models are built by tensorflow-gpu version, while it is uncertain for its compatibility in the base tensorflow module. Conflict may happen if you have both of the two package, since base tensorflow is the default to be imported. Some dependent libraries may be required to use face_recognition module, if meet errors, please check [here](https://github.com/ageitgey/face_recognition).
+Note that the CNN models are built by tensorflow-gpu version, while it is uncertain for its compatibility in the basic tensorflow module. Conflict may happen if you have both of the two package, since base tensorflow is the default to be imported. Some dependent libraries may be required to use face_recognition module, if meet errors, please check [here](https://github.com/ageitgey/face_recognition).
 
 #### Tips
 
