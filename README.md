@@ -6,6 +6,8 @@ Face is one of the most crucial biometrics to not only distinguish different ind
 
 This project mainly studies and compares various machine learning and neural network models in some classical applications of both real human and cartoon face attributes analysis. The first two tasks are based on a celebrity image (real-human) dataset ([CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)) with 5000 single portraits to implement gender recognition and smiling detection, while an published cartoon face dataset([CartoonSet10k](https://google.github.io/cartoonset/)) with single 10000 portraits is investigated on the face shape recognition and eye’s color classification tasks. Commonly, all of the four tasks are classification problem, while the first two are binary classification and the remaining ones are multi-class classification.
 
+### Model Summary
+
 | Task | Model         | Features                   | Val Acc | Test Acc |
 |:----:|---------------|----------------------------|---------|----------|
 |  A1  | SVM           | Face Embedding             | 0.9828  | 0.9938   |
